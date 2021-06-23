@@ -3,6 +3,8 @@
 let currentNote;
 let noteArray =[]
 
+//function to select up to 2 notes
+
 const chooseNote = function(element){
     currentNote = element
 if(noteArray.length < 2 && !noteArray.includes(currentNote)){
@@ -21,6 +23,8 @@ if(noteArray.length < 2 && !noteArray.includes(currentNote)){
 currentNote = null;
 }
 
+//function to add text to selected note
+
 const addNote = function(){
     if(noteArray.length === 2 && !noteArray[1].innerText){
     noteArray[1].innerText = document.querySelector("input").value
@@ -33,6 +37,8 @@ const addNote = function(){
         alert(`You can't add a note to a pre-existing note!`)
     }
 }
+
+//function to switch inner text of 2 selected notes
 
 const switchNotes = function(){
     if(noteArray.length === 2){
@@ -48,6 +54,7 @@ const switchNotes = function(){
     }
 }
 
+//function to delete note
 const deleteNote = function(){
     if(noteArray.length === 2){
     noteArray[1].innerText = null;
@@ -55,6 +62,8 @@ const deleteNote = function(){
     noteArray[0].innerText = null;
     }
 }
+
+//function to edit note
 
 const editNote = function(){
     if(noteArray.length === 2 && noteArray[1].innerText){

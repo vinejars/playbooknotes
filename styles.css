@@ -2,6 +2,8 @@
     font-family: 'Barlow', sans-serif;
 }
 
+/* Navbar */
+
 nav{
     display: flex;
     flex-direction: row;
@@ -23,6 +25,7 @@ input{
     width: 300px;
     height: 20px;
 }
+
 /* Note Section */
 
 .notes {
