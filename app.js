@@ -41,8 +41,8 @@ let noteArray =[]
 const chooseNote = function(element){
     currentNote = element
 if(noteArray.length < 2 && !noteArray.includes(currentNote)){
-    currentNote.style.borderStyle='solid'
-    currentNote.style.borderColor= "chartreuse"
+    currentNote.style.borderStyle='double'
+     currentNote.style.borderColor= "gray"
     noteArray.push(currentNote);
 } else if(noteArray.includes(currentNote)){
     currentNote.style.borderStyle='none' 
